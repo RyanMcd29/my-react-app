@@ -8,30 +8,34 @@ export default function Header({ currentPage, handlePageChange }) {
             <div class="navbar-nav">
                 
                 <a 
-                    className={currentPage === "home" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "Home" ? "nav-link active" : "nav-link disabled" } 
                     aria-current="page" 
                     href="#home"
+                    onClick={() => handlePageChange('Home')}
                 >
-                        Home
+                    Home
                 </a>
                 
                 <a 
-                    className={currentPage === "about" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "About" ? "nav-link active" : "nav-link disabled" } 
                     href="#about"
+                    onClick={() => handlePageChange('About')}
                 >
                     About Me
                 </a>
                 
                 <a 
-                    className={currentPage === "portfolio" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "Portfolio" ? "nav-link active" : "nav-link disabled" } 
                     href="#portfolio"
+                    onClick={() => handlePageChange('Portfolio')}
                 >
                     Portfolio
                 </a>
 
                 <a 
-                    className={currentPage === "resume" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "Resume" ? "nav-link active" : "nav-link disabled" } 
                     href="#resume"
+                    onClick={() => handlePageChange('Resume')}
                 >   
                     Resume  
                 </a>
