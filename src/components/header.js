@@ -8,7 +8,7 @@ export default function Header({ currentPage, handlePageChange }) {
             <div class="navbar-nav">
                 
                 <a 
-                    className={currentPage === "Home" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "Home" ? "nav-link active" : "nav-link" } 
                     aria-current="page" 
                     href="#home"
                     onClick={() => handlePageChange('Home')}
@@ -17,15 +17,17 @@ export default function Header({ currentPage, handlePageChange }) {
                 </a>
                 
                 <a 
-                    className={currentPage === "About" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "About" ? "nav-link active" : "nav-link" } 
                     href="#about"
+                    aria-current="page" 
+
                     onClick={() => handlePageChange('About')}
                 >
                     About Me
                 </a>
                 
                 <a 
-                    className={currentPage === "Portfolio" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "Portfolio" ? "nav-link active" : "nav-link" } 
                     href="#portfolio"
                     onClick={() => handlePageChange('Portfolio')}
                 >
@@ -33,7 +35,7 @@ export default function Header({ currentPage, handlePageChange }) {
                 </a>
 
                 <a 
-                    className={currentPage === "Resume" ? "nav-link active" : "nav-link disabled" } 
+                    className={currentPage === "Resume" ? "nav-link active" : "nav-link" } 
                     href="#resume"
                     onClick={() => handlePageChange('Resume')}
                 >   
