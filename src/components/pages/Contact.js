@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Portfolio () {
+export default function Contact () {
     return (
         <div class="container">
-            Portfolio
+            
         </div>
     )
 }
